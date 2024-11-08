@@ -1,0 +1,29 @@
+<!DOCTYPE html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Welcome to you for visiting my first website!</p>
+    <button id="registerBtn">Register</button>
+    <button id="loginBtn">Login</button>
+    <script src="./node_modules/socket.io/client-dist/socket.io.js"></script>
+    <script>
+        const registerBtn = document.getElementById('registerBtn');
+        const loginBtn = document.getElementById('loginBtn');
+        registerBtn.addEventListener('click',e=>{
+            window.location.href='/register';
+        })
+        loginBtn.addEventListener('click',e=>{
+            window.location.href='/login';
+        })
+        // connect socket
+        const socket = io('http://localhost:3001',{
+            path:'/chat'
+        });
+        console.log('client-socket',socket);
+    </script>
+</body>
+</html>

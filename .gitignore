@@ -1,12 +1,12 @@
-client-app/node_modules
-client-app/.env.local
-client-app/.umirc.local.ts
-client-app/config/config.local.ts
-client-app/src/.umi
-client-app/src/.umi-production
-client-app/src/.umi-test
-client-app/dist
-client-app/.swc
-server-side/node_modules
-server-side/yarn.error.log
+/client-app/node_modules
+/client-app/.env.local
+/client-app/.umirc.local.ts
+/client-app/config/config.local.ts
+/client-app/src/.umi
+/client-app/src/.umi-production
+/client-app/src/.umi-test
+/client-app/dist
+/client-app/.swc
+/server-side/node_modules
+/server-side/yarn.error.log
 
